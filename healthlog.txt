@@ -1,0 +1,46 @@
+======================
+Healthcheck: 2025-11-04 04:55:17
+======================
+
+-- Date & Time --
+Tue Nov  4 04:55:17 UTC 2025
+
+-- Uptime & Load --
+ 04:55:17 up 5 min,  1 user,  load average: 0.01, 0.06, 0.03
+
+-- Memory Usage (free -m) --
+               total        used        free      shared  buff/cache   available
+Mem:            7816         467        7012           3         486        7348
+Swap:           2048           0        2048
+
+-- Disk Usage (df -h) --
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.3G  955G   1% /
+rootfs          3.9G  2.7M  3.9G   1% /init
+none            3.9G     0  3.9G   0% /dev/shm
+none            3.9G  508K  3.9G   1% /run
+none            3.9G     0  3.9G   0% /run/lock
+none            3.9G   76K  3.9G   1% /run/user
+tmpfs           782M   20K  782M   1% /run/user/1000
+drivers         238G   75G  163G  32% /usr/lib/wsl/drivers
+none            3.9G     0  3.9G   0% /usr/lib/wsl/lib
+none            3.9G  4.0K  3.9G   1% /mnt/wsl
+none            3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none            3.9G   76K  3.9G   1% /mnt/wslg/doc
+none            3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+C:\             238G   75G  163G  32% /mnt/c
+
+-- Top 5 Memory-Consuming Processes --
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         240  0.1  0.2 107032 22016 ?        Ssl  04:50   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root          55  0.1  0.1  50428 15316 ?        S<s  04:50   0:00 /usr/lib/systemd/systemd-journald
+systemd+     126  0.1  0.1  21456 12416 ?        Ss   04:50   0:00 /usr/lib/systemd/systemd-resolved
+root           1  0.4  0.1  21700 12284 ?        Ss   04:50   0:01 /sbin/init
+root         202  0.0  0.1 1756096 12160 ?       Ssl  04:50   0:00 /usr/libexec/wsl-pro-service -vv
+
+-- Checking Services (nginx, ssh) --
+nginx is NOT running
+ssh is NOT running
+
+-- End of healthcheck --
+
